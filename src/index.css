@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body{
+    background-color: #102022;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-link.active {
+    color: #22D3EE;
+    border-bottom: 2px solid #22D3EE;
+}
