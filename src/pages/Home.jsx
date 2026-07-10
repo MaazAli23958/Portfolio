@@ -5,41 +5,41 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="px-40 mx-30 my-5 md:px-10 flex flex-1 justify-center py-20 md:py-20">
-        <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-16 items-center">
-          <div className="flex flex-col gap-6 flex-1 text-center md:text-left items-center md:items-start">
+      <div className="px-4 md:px-10 py-16 flex justify-center">
+        <div className="flex flex-col-reverse md:flex-row gap-10 max-w-6xl w-full items-center">
+          <div className="flex flex-col gap-4 text-center md:text-left items-center md:items-start">
             <div className="flex flex-col gap-4">
               <span className="text-cyan-400 font-bold font-mono">
                 Hello, Everyone.
               </span>
-              <h1 className="text-6xl font-bold">I'm Mohammad Maaz Ali</h1>
-              <div className="text-2xl">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold">I'm Mohammad Maaz Ali</h1>
+              <div className="text-lg md:text-xl">
                 <span>Front-End Developer</span>
                 <span className="text-cyan-400"> ➔ </span>
                 <span className="font-bold">Mern Stack Explorer</span>
               </div>
-              <p className=" text-[#4a5568] dark:text-slate-400 text-base md:text-lg font-normal leading-relaxed max-w-[600px]">
+              <p className=" text-sm md:text-lg text-gray-400 max-w-[600px]">
                 Crafting responsive front-end interfaces today, architecting
                 full-stack solutions for tomorrow. Passionate about clean code,
                 user-centric design, and the journey from pixels to databases.
               </p>
             </div>
-            <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
-              <button className="flex cursor-pointer items-center justify-center rounded-lg text-black h-12 px-6 bg-primary bg-cyan-400 font-bold leading-normal tracking-[0.015em] transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(19,218,236,0.3)]">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <button className="w-full sm:w-auto bg-cyan-400 text-black px-6 py-3 rounded-lg font-bold">
                 <span className="truncate">Hire Me</span>
               </button>
-              <button className="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 border-2 border-[#102022] dark:border-white/20 hover:border-primary dark:hover:border-primary text-[#102022] dark:text-white hover:text-primary dark:hover:text-primary text-base font-bold leading-normal tracking-[0.015em] bg-transparent transition-all">
+              <button className="w-full sm:w-auto border border-gray-400 px-6 py-3 rounded-lg">
                 <span className="truncate">
                   <Link to='/projects'>View Projects</Link>
                 </span>
               </button>
             </div>
           </div>
-          <div className="w-full md:w-1/2 max-w-[500px] aspect-square relative group ">
+          <div className="w-full max-w-sm md:max-w-md">
             <img
-              className="flex rounded-2xl max-h-[500px] shadow-[0_0_20px_rgba(19,218,236,0.3)]"
+              className="w-full rounded-2xl shadow-lg"
               src={photo}
-              alt=""
+              alt="profile"
             />
           </div>
         </div>
